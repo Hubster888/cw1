@@ -19,6 +19,7 @@ return new class extends Migration
             $table->longText("content");
             $table->string("authorName");
             $table->timestamps();
+            // Comment to check some ting
 
             $table->foreign('post_id')->references('id')->on('posts')->onDelete('cascade')->onUpdate('cascade');
         });
